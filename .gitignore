@@ -1,0 +1,8 @@
+__pycache__/
+.cache
+.ipynb_checkpoints
+.idea
+test_q_method.py
+test_animated_plot.py
+/Docs/Results/path_video1.mp4
+/Data/Calibration/Sensor_Noise_20201113T1842.txt

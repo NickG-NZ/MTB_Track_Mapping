@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!-- Track mapping configuration parameters -->
+
+<mapping track_name='Test' date='20201102T1752'>
+	<timing>
+		<predict_rate>0.05</predict_rate>  <!-- [s] -->
+		<gnss_interp_rate>1</gnss_interp_rate> <!-- [s] -->
+	</timing>
+
+    <location>
+        <city>Wellington</city>
+        <country>New Zealand</country>
+        <latitude_deg>-41.2769</latitude_deg>
+        <longitude_deg>174.7731</longitude_deg>
+    </location>
+
+    <magnetic_field>
+        <strength>55.8586</strength>  <!-- muT -->
+        <declination>22.8</declination>  <!-- deg -->
+        <inclination>66.47</inclination>
+    </magnetic_field>
+
+    <gravity>
+        <strength>9.8025</strength>
+    </gravity>
+
+    <outlier_detection>
+        <max_specific_force>20</max_specific_force>  <!-- m/s^2 -->
+        <max_angular_rate>1</max_angular_rate>  <!-- rad/s -->
+        <max_magnetic_field>65</max_magnetic_field>
+    </outlier_detection>
+
+    <sensor_mount_location>
+        <orientation>0,0.96,0</orientation> <!-- [rad] yaw,roll,pitch bike frame to sensor frame -->
+        <position>0,0,0</position>  <!-- position vector from sensor to bike CoG -->
+    </sensor_mount_location>
+
+    <satellite_image>
+        <top_left_corner>-0.719813577,3.050563942</top_left_corner>  <!-- geodetic coords of satellite image -->
+    </satellite_image>
+</mapping>
+
