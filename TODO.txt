@@ -1,8 +1,0 @@
-TODO
-##################
-
-210 Paper
-
-Report
-1) Block diagram of filter architecture
-9) Helmet cam video with map. If possible.
