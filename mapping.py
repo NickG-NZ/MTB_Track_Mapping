@@ -41,7 +41,6 @@ class TrackMapper:
             if no_updates:
                 gnss_meas = np.full((6,1), np.nan, dtype=float)
                 mag_meas = np.full((3,1), np.nan, dtype=float)
-
             # Step MEKF
             state, covariance = self.filter.step(gyro_meas, accel_meas, mag_meas, gnss_meas)
             self._update_map(state, covariance, t_now)

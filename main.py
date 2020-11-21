@@ -42,14 +42,15 @@ def main(parse_data=False):
     track_map = TrackMap()
     mapper = TrackMapper(track_map, processed_data, map_cfg_file, sensor_cfg_file)
     mapper.run_mapping()
-    no_meas_map = TrackMap()
-    no_meas_mapper = TrackMapper(no_meas_map, processed_data, map_cfg_file, sensor_cfg_file)
-    no_meas_mapper.run_mapping(no_updates=True)
+    # no_meas_map = TrackMap()
+    # no_meas_mapper = TrackMapper(no_meas_map, processed_data, map_cfg_file, sensor_cfg_file)
+    # no_meas_mapper.run_mapping(no_updates=True)
 
     # Results visualization
-    plot_orientation_timeseries(track_map, no_meas_map)
+    # plot_orientation_timeseries(track_map, no_meas_map)
     # img_tl_corner = mapper.map_config["sat_img_tl_corner"]
     # image_overlay(track_map, satellite_img_file, img_tl_corner)
+    visualize_path_ecef(track_map, processed_data)
     plt.show()
     # attitude_video = AttitudeAnimation(track_map)
     # attitude_video.run_animation()
